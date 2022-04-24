@@ -1,0 +1,46 @@
+nav, header,footer{
+    display: block;
+}
+body{
+    line-height: 1;
+    margin: 0%;
+}
+nav{
+    width: 100%;
+    margin: 0%;
+}
+nav ul{
+    background-color: #eee;
+    overflow: hidden;
+    margin: 0%;
+    padding: 0%;
+}
+ul.navbar li{
+    list-style: none;
+    float: left;
+}
+
+ul.navbar li.right_nav{
+    float: right;
+}
+ul.navbar li a{
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+ul.navbar li a:hover{
+    background-color: blue;
+    color: white;
+
+}
+@media screen and (max-width:680px) {
+    ul.navbar li:not(:nth-child(1)) {
+        display: none;
+
+    }
+    
+}
