@@ -8,15 +8,27 @@
     </head>
     <body>
 <nav>
-    <ul class="navbar">
+    <ul class="navbar" id="dropdownclick" >
         <li><a href="#">home</a> </li>
         <li><a href="#">news</a> </li>
            <li><a href="#">contact</a> </li>
            <li><a href="#">about</a> </li>
         <li class="right_nav"> <a href="#">sign up</a> </li>
         <li class="right_nav"> <a href="#">sign in</a> </li>
-        <li> <a>&#9776;</a></li>
+        <li class="dropdownicon"><a href="javascript:void(0);" onclick="dropdownmenu()">&#9776;</a></li>
         </ul>
-</nav>
+</nav> 
+<script>
+    function dropdownmenu(){
+        var x=document.getElementById(dropdownclick);
+        if(x.className==="navbar")
+        {
+            x.className+="responsive";
+        }
+        else{
+            x.className==="navbar";
+        }
+    }
+</script>
     </body>
 </html>

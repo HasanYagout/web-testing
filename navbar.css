@@ -35,12 +35,29 @@ ul.navbar li a{
 ul.navbar li a:hover{
     background-color: blue;
     color: white;
-
 }
-@media screen and (max-width:680px) {
-    ul.navbar li:not(:nth-child(1)) {
-        display: none;
+ul.navbar li.dropdownicon{
+display: none;
+}
 
+@media screen and (max-width: 680px) {
+    ul.navbar li:not(:nth-child(1)){
+        display:none ;
     }
     
+    ul.navbar li.dropdownicon{
+        display: block;
+        float: right;
+    }
+    ul.navbar.responsive{
+        position: relative;
+    }
+    ul.navbar.responsive li{
+        display: inline;
+        float: none;
+    }
+    ul.navbar.responsive li a{
+        display: block;
+        text-align: left ;
+    }
 }
