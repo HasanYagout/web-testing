@@ -98,7 +98,9 @@ display: none;
     ul.navbar li:not(:nth-child(1)){
         display:none ;
     }
-    
+    div.leftside-col{
+        margin: 15px;
+    }
     ul.navbar li.dropdownicon{
         display:block;
         float: right;
@@ -127,6 +129,9 @@ display: none;
     div.leftside-col{
         margin: 15px;
     }
+    
+    
+
     input[type="text"]{
         width: 350px;
 
