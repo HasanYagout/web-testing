@@ -145,7 +145,7 @@ label{
     font-size: 35px;
     font-weight: 600;
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 257.28px) {
     ul.navbar li:not(:nth-child(1)){
         display:none ;
     }
