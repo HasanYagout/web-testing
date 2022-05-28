@@ -1,0 +1,257 @@
+nav, header,footer{
+    display: block;
+}
+body{
+    line-height: 1;
+    margin: 0%;
+    
+}
+nav{
+    width: 100%;
+    margin: 0%;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+.col-1{ width:8.33% ;}
+
+.col-2{ width: 16.66%;}
+
+.col-3{width: 25%;}
+
+.col-4{width: 33.33%;}
+
+.col-5{ width: 41.66%;}
+
+.col-6{width: 50%;}
+
+.col-7{width: 58.33%;}
+
+.col-8{ width: 66.66%;}
+
+.col-9{width: 75%;}
+
+.col-10{width: 83.33;}
+
+.col-11{ width: 91.66%;}
+
+.col-12{width: 100%;}
+
+h1.large{
+    color: #fff;
+    font-size: 56px;
+    margin: 0%;
+    line-height: 70px;
+}
+h1.section2header{
+    text-align: center;
+    font-size: 65px;
+}
+input[type="text"]{
+    border: solid 0px;
+    font-size: 20px;
+    width: 400px ;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 7px;
+    
+}
+form h2{
+    color: #fff;
+
+}
+
+nav ul{
+    background-color: #eee;
+    overflow: hidden;
+    margin: 0%;
+    padding: 0%;
+}
+ul.navbar li{
+    list-style: none;
+    float: left;
+}
+
+ul.navbar li.right_nav{
+    float: right;
+}
+ul.navbar li a{
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+ul.navbar li a:hover{
+    background-color: blue;
+    color: white;
+}
+ul.navbar li.dropdownicon{
+display: none;
+}
+div.leftside-col{
+    margin-left: 30%;
+}
+div.rightside-col{
+    margin-left: 15%;
+}
+*{
+    box-sizing: border-box;
+}
+div.box{
+    border-radius: 7px;
+    margin: 24px;
+    text-align: center;
+    padding: 36px 24px 40px 24px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15),
+    0 2px 3px 0 rgba(0, 0, 0, 0.1) ;
+}
+article p{
+    font-size: 35px;
+    padding: 20px;
+}
+button{
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    background-color: #0069ff;
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border-radius: 7px;
+}
+button.LearnMore{
+    margin: auto;
+    display: block;
+    border: solid 0px;
+}
+p{
+    font-size: 28px;
+    line-height: 1.2;
+}
+/* changes size if it needs to with the change of the screen size */
+div.icon{
+    width: 100%;
+}
+label{
+    font-size: 35px;
+    font-weight: 600;
+}
+@media screen and (max-width: 680px) {
+    ul.navbar li:not(:nth-child(1)){
+        display:none ;
+    }
+    
+    ul.navbar li.dropdownicon{
+        display:block;
+        float: right;
+    }
+    ul.navbar.responsive li.dropdownicon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    ul.navbar.responsive li{
+        display: inline;
+        float: none;
+    }
+    ul.navbar.responsive{
+        display: inline;
+    }
+    ul.navbar.responsive li a{
+        display: block;
+        text-align: left ;
+    }
+    .col-6,.col-4, .col-7,.col-5{
+        width: 100%;
+        margin: 0%;
+    }
+    div.slopeIcon{
+        margin: 10px;
+    }
+    div.slopeIcon img {
+        width: 100%;
+    }
+    h1.section2header{
+        font-size: 50px;
+    }
+    div.box{
+        padding: 5px;
+        display: block;
+    }
+    div.leftside-col{
+        margin: 15px;
+    }
+    div.rightside-col{
+        margin: 15px;
+    }
+    input[type="text"]{
+        width: 350px;
+
+    }
+    .videocontainer iframe{
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        margin: 0%;
+    }
+    div.mobileState{
+        width: 50%;
+        display: block;
+    }
+    article p{
+        font-size: 25px;
+    }
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+#section-1-gradient{
+    background: #076DFF;
+    background: linear-gradient(#076DFF,#65a5ff);
+}
+
+div.slopeIcon img{
+    display: block;
+    margin: auto;
+    box-shadow: -2px  -2px 20px 2px rgba(0, 0, 0, .15), 2px 2px 17px 2px rgba(0, 0, 0, 1);
+}
+
+footer.footsy
+{
+   background-color: #666;
+   padding-left: 10%;
+}
+footer.footsy h1{
+    color: white;
+    font-size: 35px;
+}
+
+footer.footsy ul{
+    list-style: none;
+    text-align: left;
+    padding-left: 0px;
+}
+footer.footsy ul li{
+    color: white;
+    font-size: 22px;
+    line-height: 1.5;
+}
